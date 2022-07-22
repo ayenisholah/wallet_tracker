@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": "echo 'We hope you have run lint and tested this if you are pushing an MR!'"
+  }
+}
