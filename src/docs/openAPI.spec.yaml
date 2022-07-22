@@ -6,9 +6,9 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:5002/api
-    description: Tufext local development base url
-  - url: https://Tufext.herokuapp.com/api
-    description: Tufext staging base url
+    description: Wallet tracker local development base url
+  - url: https://mighty-journey-28405.herokuapp.com/api
+    description: Wallet Tracket staging base url
 components:
   responses:
     Unauthorized:

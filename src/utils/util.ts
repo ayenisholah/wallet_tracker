@@ -4,7 +4,7 @@ export const LOG_LEVEL_DEBUG = 3;
 export const LOG_LEVEL_INFO = 2;
 export const LOG_LEVEL_WARN = 1;
 export const LOG_LEVEL_ERROR = 0;
-export const LOG_LEVEL = parseInt(process.env.TUFEXT_LOG_LEVEL as string) || 0;
+export const LOG_LEVEL = parseInt(process.env.WALLET_TRACKER_LOG_LEVEL as string) || 0;
 
 export function logError(...values: any) {
   if (LOG_LEVEL < LOG_LEVEL_ERROR) {

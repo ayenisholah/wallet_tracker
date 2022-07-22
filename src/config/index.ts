@@ -4,7 +4,7 @@ const cfg = {
     env: process.env.NODE_ENV || 'development',
   },
   clients: [
-    process.env.TUFEXT_FRONTEND_DEPLOYMENT_URL,
+    process.env.WALLET_TRACKER_FRONTEND_DEPLOYMENT_URL,
     'http://localhost:3000',
     'http://localhost:3003/*',
     'http://localhost:3004',
