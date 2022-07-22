@@ -1,0 +1,31 @@
+---
+openapi: 3.0.0
+info:
+  title: TUFEXT API
+  description: Backend API for the wallet tracker
+  version: 1.0.0
+servers:
+  - url: http://localhost:5002/api
+    description: Tufext local development base url
+  - url: https://Tufext.herokuapp.com/api
+    description: Tufext staging base url
+components:
+  responses:
+    Unauthorized:
+      description: Wrong or invalid auth token
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPException'
+    InvalidOffsetAndOrLimit:
+      description: Incorrect format for either order, offset or limit parameters
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPException'
+    InternalServerError:
+      description: Internal server Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPException'
